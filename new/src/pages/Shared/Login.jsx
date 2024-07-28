@@ -34,7 +34,7 @@ const Login = () => {
                     <Button className="w-full">Login</Button>
                     </div>
                 <div className=" flex justify-center items-center">
-                    <span>Don't have an account? <Link  className="text-primary"  to="/register">Signup</Link></span>
+                    <span>Don't have an account? <Link  className="text-teal-600"  to="/register">Register</Link></span>
                     </div>
                 </CardFooter>
             </Card>

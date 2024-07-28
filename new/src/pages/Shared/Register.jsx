@@ -55,7 +55,7 @@ const Register = () => {
           </div>
           <div className=" flex justify-center items-center">
             <span>
-              Already have an account ? <Link className="text-primary" to="/login">Login</Link>
+              Already have an account ? <Link className="text-teal-600" to="/login">Login</Link>
             </span>
           </div>
         </CardFooter>

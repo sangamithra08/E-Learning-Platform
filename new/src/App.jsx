@@ -10,6 +10,12 @@ import AdminLayout from './layout/AdminLayout'
 import AdminDashboard from './pages/Admin/AdminDashboard'
 import NotFound from './pages/Shared/NotFound'
 import HomeLayout from './layout/HomeLayout'
+import Teacher from './pages/Admin/Teacher'
+import Course from './pages/Admin/Course'
+import Student from './pages/Admin/Student'
+import { Support } from '@mui/icons-material'
+import Setting from './pages/Admin/Setting'
+import AllCourses from './pages/Shared/AllCourses'
 
 const App = () => {
     return (
@@ -17,6 +23,7 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route element={<HomeLayout />}>
+                        <Route path='/courses' element={<AllCourses />} />
                         <Route path='/' element={<Home />} />
                         <Route path='/login' element={<Login />} />
                         <Route path='/register' element={<Register />} />
@@ -28,6 +35,11 @@ const App = () => {
                     
                     <Route element={<AdminLayout />}>
                         <Route path='/admin/dashboard' element={<AdminDashboard />} />
+                        <Route path='/admin/teacher' element={<Teacher />} />
+                        <Route path='/admin/course' element={<Course />} />
+                        <Route path='/admin/student' element={<Student />} />
+                        <Route path='/admin/support' element={<Support />} />
+                        <Route path='/admin/setting' element={<Setting />} />
                     </Route>
 
                     <Route path='*' element={<NotFound />} />

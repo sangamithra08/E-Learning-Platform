@@ -1,7 +1,5 @@
 import { Facebook, Twitter, Instagram } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
-import { Label } from "../ui/label";
 import skctfulllogo from "../../assets/img/skctfulllogo.webp";
 
 const Footer = () => {
@@ -49,7 +47,7 @@ const Footer = () => {
             <Instagram className="h-6 w-6" />
           </a>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

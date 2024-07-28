@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { LayoutDashboard, Cog, Mail, Users, Power, BookOpenText , Settings , BadgeHelp, TrainFrontTunnel} from 'lucide-react'
 import { Button } from '../ui/button'
-const AdminLeftbar = () => {
+const UserLeftbar = () => {
 
-    const AdminLinks = [
+    const UserLinks = [
         {
             title: 'Dashboard',
             link: '/admin/dashboard',
@@ -43,7 +43,7 @@ const AdminLeftbar = () => {
             </div>
             <div className='h-[90%] w-full flex flex-col justify-start items-center gap-2'>
                 {
-                    AdminLinks.map((data, index) => (
+                    UserLinks.map((data, index) => (
                         <NavLink key={index} to={data.link}  className='p-5 bg-primary/5 hover:bg-primary/10 font-bold mt-2 w-full'>
                             <span className='flex flex-row items-center justify-start h-full w-full gap-2'>
                                 {React.createElement(data.icon, { size: 20 })}
@@ -65,4 +65,4 @@ const AdminLeftbar = () => {
     )
 }
 
-export default AdminLeftbar
+export default UserLeftbar
