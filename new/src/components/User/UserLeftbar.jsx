@@ -1,68 +1,54 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Cog, Mail, Users, Power, BookOpenText , Settings , BadgeHelp, TrainFrontTunnel} from 'lucide-react'
-import { Button } from '../ui/button'
-const UserLeftbar = () => {
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { LayoutDashboard, BookOpenText, Power, Home } from 'lucide-react';
+import { Button } from '../ui/button';
 
+const UserLeftbar = () => {
     const UserLinks = [
         {
             title: 'Dashboard',
-            link: '/admin/dashboard',
-            icon: LayoutDashboard
-        }
-        , {
-            title: 'Students',
-            link: '/admin/student',
-            icon: Users
-        }
-        , {
-            title: 'Teachers',
-            link: '/admin/teacher',
-            icon: TrainFrontTunnel
-        }
-        , {
-            title: 'Course',
-            link: '/admin/course',
-            icon: BookOpenText
-        }
-        , {
-            title: 'Support',
-            link: '/admin/support',
-            icon: BadgeHelp
-        }
-        , {
-            title: 'Setting',
-            link: '/admin/setting',
-            icon: Settings
-        }
-    ]
+            link: '/dashboard',
+            icon: LayoutDashboard,
+        },
+        {
+            title: 'Home',
+            link: '/',
+            icon: Home,
+        },
+        {
+            title: 'Courses',
+            link: '/courses',
+            icon: BookOpenText,
+        },
+    ];
+
     return (
-        <div className=' h-screen w-1/7 flex justify-center items-center flex-col shadow-sm shadow-primary pt-10'>
-            <div className='h-[5%] text-primary font-bold text-2xl flex justify-center items-center'>
+        <div className="h-screen w-1/5 flex flex-col items-center shadow-sm shadow-primary pt-10 bg-white">
+            <div className="h-16 text-primary font-bold text-2xl flex justify-center items-center mb-10">
                 SKCT
             </div>
-            <div className='h-[90%] w-full flex flex-col justify-start items-center gap-2'>
-                {
-                    UserLinks.map((data, index) => (
-                        <NavLink key={index} to={data.link}  className='p-5 bg-primary/5 hover:bg-primary/10 font-bold mt-2 w-full'>
-                            <span className='flex flex-row items-center justify-start h-full w-full gap-2'>
-                                {React.createElement(data.icon, { size: 20 })}
-                                {data.title}
-                            </span>
-                        </NavLink>
-                    ))
-                }
+            <div className="flex-1 w-full flex flex-col items-center gap-4">
+                {UserLinks.map((data, index) => (
+                    <NavLink
+                        key={index}
+                        to={data.link}
+                        className="p-5 w-full flex items-center justify-start gap-2 bg-primary/5 hover:bg-primary/10 font-bold rounded-lg transition-all duration-300"
+                    >
+                        {React.createElement(data.icon, { size: 20 })}
+                        <span>{data.title}</span>
+                    </NavLink>
+                ))}
             </div>
-            <div className='h-[5%] w-full flex flex-col justify-center items-center'>
-                <Button className='p-5  bg-red-500/5 hover:bg-red-500/10 font-bold  w-full'>
-                    <span className='flex flex-row items-center justify-start h-full w-full gap-2 text-red-500'>
-                        <Power size={30} /><p className='text-xl'>Logout</p> 
+            <div className="w-full p-5">
+                <Button className="w-full p-4 bg-red-500/5 hover:bg-red-500/10 font-bold text-red-500 rounded-lg transition-all duration-300">
+                    <span className="flex items-center justify-start gap-2">
+                        <Power size={20} />
+                        <p className="text-xl">Logout</p>
                     </span>
                 </Button>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default UserLeftbar
+export default UserLeftbar;

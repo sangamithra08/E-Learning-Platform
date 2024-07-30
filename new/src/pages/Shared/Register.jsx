@@ -51,7 +51,8 @@ const Register = () => {
         </CardContent>
         <CardFooter className="grid gap-4">
           <div className="grid gap-2">
-            <Button>Create account</Button>
+            <Link to='/'>
+            <Button>Create account</Button></Link>
           </div>
           <div className=" flex justify-center items-center">
             <span>

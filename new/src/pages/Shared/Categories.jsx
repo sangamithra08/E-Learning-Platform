@@ -23,7 +23,7 @@ const Categories = [
             id: 1,
             img: img1,
             title: 'How Computer Works?',
-            Category:"Women",
+            Category:"CS Subject",
             durationhrs:'12',
             durationmins:'30',
             reviews:'12'
@@ -143,9 +143,9 @@ const Categories = [
             title: 'Advanced C++',
             // price: 116,
             Category:'Programming language',
-            durationhrs:'8',
+            durationhrs:'11',
             durationmins:'20',
-            reviews:'200'
+            reviews:'1780'
         },
         {
             id: 14,
@@ -153,9 +153,9 @@ const Categories = [
             title: 'OOPs Concept',
             // price: 116,
             Category:'CS Subject',
-            durationhrs:'8',
-            durationmins:'20',
-            reviews:'200'
+            durationhrs:'9',
+            durationmins:'10',
+            reviews:'140'
         },
         {
             id: 15,
@@ -173,9 +173,9 @@ const Categories = [
             title: 'Agile Methodology',
             // price: 116,
             Category:'CS Subject',
-            durationhrs:'8',
-            durationmins:'20',
-            reviews:'200'
+            durationhrs:'7',
+            durationmins:'45',
+            reviews:'60'
         },
         {
             id: 17,
@@ -184,8 +184,8 @@ const Categories = [
             // price: 116,
             Category:'CS Subject',
             durationhrs:'8',
-            durationmins:'20',
-            reviews:'200'
+            durationmins:'33',
+            reviews:'120'
         },
         {
             id: 18,
@@ -193,9 +193,9 @@ const Categories = [
             title: 'Complete JavaScript',
             // price: 116,
             Category:'Programming language',
-            durationhrs:'8',
-            durationmins:'20',
-            reviews:'200'
+            durationhrs:'12',
+            durationmins:'40',
+            reviews:'230'
         },
         {
             id: 19,
@@ -203,9 +203,9 @@ const Categories = [
             title: 'Introduction to MongoDB',
             // price: 116,
             Category:'Database',
-            durationhrs:'8',
-            durationmins:'20',
-            reviews:'200'
+            durationhrs:'4',
+            durationmins:'10',
+            reviews:'100'
         },
         {
             id: 20,
@@ -213,7 +213,7 @@ const Categories = [
             title: 'PL/SQL',
             // price: 116,
             Category:'Database',
-            durationhrs:'8',
+            durationhrs:'10',
             durationmins:'20',
             reviews:'200'
         },

@@ -1,10 +1,10 @@
 import React from 'react'
-import { AdminTeacherTable } from '../../components/Admin/AdminTeacherTable'
+import { AdminTeacherTable } from '../../components/Admin/teacher/AdminTeacherTable'
 
 const Teacher = () => {
   return (
     <div>
-      Teacher
+      
       <AdminTeacherTable />
     </div>
   )

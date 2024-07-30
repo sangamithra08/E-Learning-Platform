@@ -13,7 +13,7 @@ import HomeLayout from './layout/HomeLayout'
 import Teacher from './pages/Admin/Teacher'
 import Course from './pages/Admin/Course'
 import Student from './pages/Admin/Student'
-import { Support } from '@mui/icons-material'
+import Support from './pages/Admin/Support'
 import Setting from './pages/Admin/Setting'
 import AllCourses from './pages/Shared/AllCourses'
 

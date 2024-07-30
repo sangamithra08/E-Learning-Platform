@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import UserContent from "../../components/User/UserContent";
 const UserDashboard = () => {
   return (
-    <div>UserDashboard</div>
-  )
-}
+    <div>
+      <UserContent />
+    </div>
+  );
+};
 
-export default UserDashboard
+export default UserDashboard;

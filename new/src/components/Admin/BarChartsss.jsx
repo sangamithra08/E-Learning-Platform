@@ -82,7 +82,7 @@ export default function BarChartsss() {
   const [tickLabelPlacement, setTickLabelPlacement] = React.useState('middle');
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '50%' }}>
       {/* <TickParamsSelector
         tickPlacement={tickPlacement}
         tickLabelPlacement={tickLabelPlacement}

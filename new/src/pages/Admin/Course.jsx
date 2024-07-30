@@ -1,11 +1,10 @@
 import React from 'react'
-import { AdminCourseTable } from '../../components/Admin/AdminCourseTable'
+import { AdminCourseTable } from '../../components/Admin/course/AdminCourseTable'
 
 
 const Course = () => {
   return (
     <div>
-      Course
       <AdminCourseTable />
     </div>
   )

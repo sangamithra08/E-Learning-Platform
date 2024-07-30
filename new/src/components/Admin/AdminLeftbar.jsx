@@ -16,7 +16,7 @@ const AdminLeftbar = () => {
             icon: Users
         }
         , {
-            title: 'Teachers',
+            title: 'Professors',
             link: '/admin/teacher',
             icon: TrainFrontTunnel
         }
@@ -29,11 +29,6 @@ const AdminLeftbar = () => {
             title: 'Support',
             link: '/admin/support',
             icon: BadgeHelp
-        }
-        , {
-            title: 'Setting',
-            link: '/admin/setting',
-            icon: Settings
         }
     ]
     return (
